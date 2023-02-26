@@ -1,0 +1,75 @@
+// Global reset
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// Цвета
+$main-text-color: #555248;
+$main-bg-color: #fdfdfb;
+
+// для удобного использования rem
+html {
+  // я хочу, чтобы размер шрифта был 10px, 10 / 16 = 0.625 => 62.5%
+  font-size: 62.5%;
+  max-width: 100%;
+}
+// Базовые стили для всего документа
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #000;
+  background-color: $main-bg-color;
+
+  // для центрирование всей страницы
+  display: flex;
+  justify-content: center;
+}
+
+// Повторяющиеся стили
+
+.link {
+  text-decoration: none;
+  color: black; // потом буду в стилях конкретного блока изменять
+}
+
+//////////
+// МЕНЮ //
+//////////
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 3rem;
+}
+
+.logo {
+  margin-right: 26rem; // 260px
+}
+
+.menu {
+  max-width: 100rem; // 1000px
+  margin-right: 28rem; // 280px
+}
+
+.menu__link {
+  color: $main-text-color;
+  font-size: 1.4rem; // 14px, но респонсив
+  margin-right: 6.5rem; //65px
+}
+
+.menu__link:last-child {
+  margin-right: 0;
+}
+
+.icons_header__icon {
+  margin-right: 2.3rem;
+}
+
+.icons_header__icon:last-child {
+  margin-right: 0;
+}
