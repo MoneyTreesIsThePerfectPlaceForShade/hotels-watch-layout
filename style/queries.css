@@ -1,0 +1,242 @@
+/* rem и em в медиа запросах не реагирует на размер шрифта в html, здесь 1rem = 1em = 16px */
+
+/* 1200/16 = 75 */
+@media (max-width: 81.25em) {
+  .subscribe__w {
+    max-width: 100rem;
+  }
+}
+
+@media (max-width: 75em) {
+  .wrapper {
+    max-width: 100rem;
+    margin: auto;
+  }
+  .collection {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.2fr 1fr 1fr 1fr;
+    grid-template-rows: 20rem 30rem 9rem;
+  }
+
+  .menu {
+    margin-right: 10%;
+  }
+  .logo {
+    margin-right: 10%;
+  }
+  .popular-models__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+  .popular-models__card {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 37rem;
+
+    margin-bottom: 0rem;
+  }
+}
+
+@media (max-width: 70em) {
+  .quality {
+    max-width: 100rem;
+  }
+}
+
+@media (max-width: 64.375em) {
+  .quality {
+    max-width: 90rem;
+  }
+  .quality__circles {
+    top: -60%;
+    right: -5%;
+  }
+  .quality__watch {
+    justify-self: center;
+  }
+  .quality__info {
+    margin-left: 3rem;
+  }
+  .quality__info h1 {
+    margin-bottom: 2rem;
+  }
+  .quality__info p {
+    margin-bottom: 2.5rem;
+  }
+  .subscribe__w {
+    max-width: 90rem;
+    margin: auto;
+  }
+  .subscribe {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: 0.5rem;
+  }
+  .subscribe__photo-1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    /* justify-self: right; */
+  }
+  .subscribe__photo-2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    justify-self: right;
+    align-self: flex-end;
+  }
+  footer {
+    gap: 6rem;
+    /* padding: 6rem; */
+  }
+}
+
+@media (max-width: 62.5em) {
+  .menu {
+    margin-right: 5%;
+  }
+  .logo {
+    margin-right: 5%;
+  }
+  .wrapper {
+    max-width: 80rem;
+  }
+  .collection {
+    grid-template-rows: 20rem 30rem 7rem;
+  }
+  .collection__info p {
+    max-width: 20rem;
+  }
+  .collection__watch {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 58.125em) {
+  .subscribe__w {
+    max-width: 60rem;
+  }
+  .subscribe {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .subscribe__photo-1,
+  .subscribe__photo-2 {
+    opacity: 0;
+  }
+  .subscribe__photo-3 {
+    grid-column: 2/4;
+    grid-row: 1/-1;
+  }
+  footer {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 48.125em) {
+  .menu__link {
+    margin-right: 2rem;
+  }
+  .icons_header__icon {
+    margin-right: 1.3rem;
+  }
+  .collection {
+    grid-template-rows: 20rem 30rem 0rem;
+  }
+  .collection__info {
+    align-self: flex-start;
+  }
+  .collection__line {
+    opacity: 0;
+  }
+  .collection__info h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .collection__info h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .collection__info p {
+    font-weight: 300;
+    font-size: 1.4rem;
+
+    max-width: 19rem;
+  }
+
+  .collection__btn {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.05em;
+
+    padding: 2rem 3rem;
+
+    margin-top: 3rem;
+  }
+
+  .collection__watch {
+    max-width: 95%;
+  }
+
+  .quality__watch {
+    max-width: 90%;
+
+    justify-self: right;
+  }
+
+  /* .quality__slider {
+    margin: 0rem 4rem;
+  } */
+
+  .quality__info h1 {
+    font-size: 2.4rem;
+    line-height: 4.3rem;
+
+    color: #1b1a17;
+
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .quality__info p {
+    font-size: 1.4rem;
+    line-height: 150%;
+
+    color: #444240;
+
+    margin-bottom: 4.5rem;
+  }
+
+  .quality__button {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.05em;
+
+    padding: 2rem 3.3rem;
+  }
+
+  .subscribe {
+    gap: 1.5rem;
+  }
+  .footer__txt {
+    font-size: 1rem;
+    line-height: 1.4rem;
+
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-h1 {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.07em;
+    margin-bottom: 2rem;
+  }
+}
