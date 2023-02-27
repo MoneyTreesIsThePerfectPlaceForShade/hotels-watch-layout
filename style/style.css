@@ -42,12 +42,12 @@ header {
 }
 
 .logo {
-  margin-right: 26rem;
+  margin-right: 20%;
 }
 
 .menu {
   max-width: 100rem;
-  margin-right: 28rem;
+  margin-right: 20%;
 }
 
 .menu__link {
@@ -214,6 +214,7 @@ header {
   align-items: flex-start;
   flex-direction: column;
   max-width: 37rem;
+  margin-bottom: 10rem;
 }
 
 .popular-models__card h1 {
@@ -246,4 +247,196 @@ header {
   line-height: 2.1rem;
   margin-left: 1.8rem;
   color: #1b1a17;
+}
+
+.quality__bg {
+  background-color: #f7f5ef;
+}
+
+.quality {
+  max-width: 120rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 0.2fr;
+  grid-template-rows: 1fr 0.1fr;
+  position: relative;
+  overflow: hidden;
+}
+
+.quality__circles {
+  position: absolute;
+  top: -60%;
+  right: -8%;
+}
+
+.quality__watch {
+  max-width: 80%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: right;
+}
+
+.quality__info {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+  margin-left: 7rem;
+}
+
+.quality__info h1 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 4.3rem;
+  color: #1b1a17;
+  margin-bottom: 4rem;
+}
+
+.quality__info p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #444240;
+  margin-bottom: 4.5rem;
+}
+
+.quality__button {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  padding: 2.5rem 3.8rem;
+  background-color: #d4b098;
+  transition: ease-out 0.2s;
+  cursor: pointer;
+}
+
+.quality__button:hover {
+  background-color: #1b1a17;
+  transition: ease-in 0.2s;
+}
+
+.quality__slider {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  color: rgba(27, 26, 23, 0.82);
+  justify-self: right;
+  margin: 1rem 4rem;
+}
+
+.subscribe__w {
+  max-width: 120rem;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.subscribe {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  padding: 10rem 0;
+}
+
+.subscribe__info {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.subscribe__photo-1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: right;
+}
+
+.subscribe__photo-2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: right;
+}
+
+.subscribe__photo-3 {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+.subscribe__info h1 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 4.3rem;
+  color: #1b1a17;
+  margin-bottom: 4rem;
+}
+
+.subscribe__info p {
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+  color: #444240;
+  margin-bottom: 12rem;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.subscribe__info-span {
+  font-weight: 700;
+}
+
+footer {
+  background-color: #444240;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-direction: row;
+  gap: 12rem;
+  padding: 6rem;
+}
+
+.contacts,
+.about,
+.customers,
+.ship {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.footer__txt {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 1.5rem;
+}
+
+.footer-h1 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.contacts img,
+.footer-h1 {
+  margin-bottom: 3rem;
 }/*# sourceMappingURL=style.css.map */
