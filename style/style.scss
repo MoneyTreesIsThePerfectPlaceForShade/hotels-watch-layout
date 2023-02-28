@@ -49,9 +49,61 @@ body {
   width: 5rem;
   border: 0.1rem solid #c4c0b6;
 }
+
+.open {
+  display: flex !important;
+}
 //////////
 // МЕНЮ //
 //////////
+
+.burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 3rem;
+  height: 1.8rem;
+}
+
+.burger span {
+  height: 0.2rem;
+  width: 100%;
+  transform: scale(1);
+  background-color: $main-text-color;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  height: 0.2rem;
+  width: 100%;
+  background-color: $main-text-color;
+  transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  bottom: 0;
+}
+
+.burger.active span {
+  transform: scale(0);
+}
+
+.burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
 
 header {
   display: flex;

@@ -53,6 +53,9 @@
             class="icons_header__icon"
           />
         </div>
+        <div class="burger">
+          <span></span>
+        </div>
       </header>
 
       <!-- Основная часть сайта -->
@@ -209,5 +212,12 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      document.querySelector(".burger").addEventListener("click", function () {
+        this.classList.toggle("active");
+        document.querySelector(".menu").classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
